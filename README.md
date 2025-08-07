@@ -43,15 +43,16 @@ Esto se maneja en el archivo main.js, donde se obtiene la lista de personajes y 
 ---
 
 ## 📁 Estructura del proyecto
-rick-and-morty-character-viewer/
-├── App/
+
+📁 rick-and-morty-character-viewer/
+├── src/
 │   ├── index.html
 │   ├── main.js
 │   ├── main2.js
 │   ├── styles.css
-│   └── fondo.jpg (u otra imagen que uses como fondo)
-│ pruebas-funcionales.md   
-├── README.md
+│   └── fondo.jpg
+├── pruebas-funcionales.md
+└── README.md
 
 ---
 

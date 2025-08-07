@@ -69,7 +69,8 @@ Esto se maneja en el archivo main.js, donde se obtiene la lista de personajes y 
 
  ---
 
-📌 Decisiones Técnicas
+## 📌 Decisiones Técnicas
+
 -Separación de responsabilidades en archivos JavaScript: Se decidió dividir la lógica de renderizado (main.js) y la lógica de interacción (main2.js) para mantener el código más organizado y legible.
 
 -Uso de fetch nativo: Se utilizó fetch en lugar de una librería externa para consumir la API, ya que es suficiente para este caso y mantiene el proyecto liviano.

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed; /* se mantiene fija */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);  /* <<< el difuminado */
+    opacity: 0.3;        /* <<< controla cuán tenue se ve */
+    z-index: -1;         /* <<< para que quede detrás de todo */
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 22px;
+    padding: 25px;    
+}
+
+.tarjetaPersonaje {
+    display: flex;   
+    flex-direction: column; 
+}
+
+.tarjetaPersonaje img{
+    width: 100%;
+}
+
+.contenedor-Puntuacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 12px;
+}
+
+.puntuacionPersonaje {
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.puntuacionPersonaje:not(:last-child){
+    margin-right: 12px;
+}
+
+.puntuacionPersonaje-seleccionado > .boton-puntuacion,
+.puntuacionPersonaje-seleccionado > .contadorLikes {
+    color: #009578;
+}
+
+.boton-puntuacion{
+    margin-right: 6px;
+    cursor: pointer;
+    color: #555555;
+}
+
+.puntuacionPersonaje:not(.puntuacionPersonaje-seleccionado) > .boton-puntuacion:hover{
+    color: #000;
+}
+
+article {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 1px 1px 1px #000;
+}
+
+
+h1{
+    text-align: center;
+}
+
+
+
+

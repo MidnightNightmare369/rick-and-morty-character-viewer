@@ -50,7 +50,7 @@ rick-and-morty-character-viewer/
 │   ├── main2.js
 │   ├── styles.css
 │   └── fondo.jpg (u otra imagen que uses como fondo)
-├── pruebas-funcionales.md   
+│ pruebas-funcionales.md   
 ├── README.md
 
 ---
